@@ -4,8 +4,11 @@ import "./App.css";
 
 // const { ipcMain } = require("electron");
 
+const electron = window.require("electron");
+// const ipcRenderer = electron.ipcRenderer;
+
 function App() {
-  console.log(require("electron"));
+  console.log("electron", electron);
   return (
     <div className="App">
       <header className="App-header">
